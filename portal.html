@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de te llevo app</title>
+    <link rel="icon" href="Leonardo_Diffusion_make_a_pixelart_of_a_50_pixel_taxi_2-removebg-preview.png"
+        type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(fondo_pantalla.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        .computadora {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .computadora img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .movil {
+            display: none;
+        }
+
+        
+        @media only screen and (max-width: 600px) {
+            .movil {
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 20px;
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+
+            .computadora {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="computadora">
+        <h1>Descarga TeLlevoApp</h1>
+        <img src="QR.png">
+    </div>
+    <div class="movil">
+        <h1>Contenido para Móviles</h1>
+    </div>
+</body>
+
+</html>
