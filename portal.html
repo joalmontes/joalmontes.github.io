@@ -33,7 +33,7 @@
         }
 
         .computadora img {
-            max-width: 100%;
+            max-width: 50%;
             height: auto;
         }
 
@@ -41,7 +41,7 @@
             display: none;
         }
 
-        
+
         @media only screen and (max-width: 600px) {
             .movil {
                 display: block;
@@ -54,6 +54,49 @@
                 border-radius: 10px;
                 margin-top: 20px;
             }
+            .movil img{
+                max-width: 100%;
+                height: auto;
+            }
+
+            .bn632-hover {
+                width: 160px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+                margin: 20px;
+                height: 55px;
+                text-align: center;
+                border: none;
+                background-size: 300% 100%;
+                border-radius: 50px;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            .bn632-hover:hover {
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            .bn632-hover:focus {
+                outline: none;
+            }
+
+            .bn632-hover.bn26 {
+                background-image: linear-gradient(to right,
+                        #25aae1,
+                        #4481eb,
+                        #04befe,
+                        #3f86ed);
+                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+            }
 
             .computadora {
                 display: none;
@@ -65,11 +108,19 @@
 <body>
     <div class="computadora">
         <h1>Descarga TeLlevoApp</h1>
-        <img src="QR.png">
+        <img src="qr-code.png">
     </div>
     <div class="movil">
         <h1>Contenido para Móviles</h1>
+        <img src="Leonardo_Diffusion_make_a_pixelart_of_a_50_pixel_taxi_2-removebg-preview.png" >
+        <button class="bn632-hover bn26" onclick="redirigir()">Descarga</button>
     </div>
+
+    <script>
+        function redirigir() {
+            window.location.href = 'https://acortar.link/krDInI';
+        }
+    </script>
 </body>
 
 </html>
